@@ -41,11 +41,15 @@ document.getElementById("processBtn").addEventListener("click", async () => {
         // Map location to value
         let locationValue = 0; // Default Dannmak
         let locationName = "Danmark"
-        if (location === "ARN") {locationValue = 1; locationName="Sverige"} // Sverige
-        else if (location === "KRS") {locationValue = 2; locationName= "Norge"} // Norge
+        if (location === "ARN" || location === "HAD" || location ==) {locationValue = 1; locationName="Sverige"} // Sverige
+        else if (location === "KRS" || location === "TRF") {locationValue = 2; locationName= "Norge"} // Norge
         else if (location === "HAM" || location === "HAJ") {locationValue = 3; locationName="Tyskland"} // Tyskland
+        else if (location === "POZ" || location === "KRK") {locationValue = 4; locationName="Polen"} // Polen
+        else if (location === "LNZ" || location === "VIE" || location === "KLU" || location === 
+        else if (location === "BEG" {locationValue = 6; locationName="Serbien"} // Serbien
+        else if (location === "TKU" {locationValue = 7; locationName="Finland"} // Finland
 
-
+        
         const parseTime = (timeStr) => {
             const time = timeStr.slice(0, 4); // Get HHMM part
             const hour = parseInt(time.substring(0, 2), 10);
