@@ -45,7 +45,7 @@ document.getElementById("processBtn").addEventListener("click", async () => {
         else if (location === "KRS" || location === "TRF") {locationValue = 2; locationName= "Norge"} // Norge
         else if (location === "HAM" || location === "HAJ") {locationValue = 3; locationName="Tyskland"} // Tyskland
         else if (location === "POZ" || location === "KRK") {locationValue = 4; locationName="Polen"} // Polen
-        else if (location === "LNZ" || location === "VIE" || location === "KLU" || location === 
+        else if (location === "LNZ" || location === "VIE" || location === "KLU"){locationValue=5; locationName="Osterrike" //Osterrike
         else if (location === "BEG" {locationValue = 6; locationName="Serbien"} // Serbien
         else if (location === "TKU" {locationValue = 7; locationName="Finland"} // Finland
 
@@ -82,6 +82,11 @@ document.getElementById("processBtn").addEventListener("click", async () => {
         else if (place === 1) noTax = 290 * hela + 145 * halva;
         else if (place === 2) noTax = 1095 * hela + 547.5 * halva;
         else if (place === 3) noTax = 774 * hela + 387 * halva;
+        else if (place === 4) noTax = 597 * hela + 298 * halva;
+        else if (place === 5) noTax = 730 * hela + 365 * halva;
+        else if (place === 6) noTax = 533 * hela + 266 * halva;
+        else if (place === 3) noTax = 968 * hela + 484 * halva;
+          
         return noTax;
       }
       
